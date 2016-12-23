@@ -1,0 +1,20 @@
+<div class="" style="width:900px">
+  <table class="table table-striped table-bordered table-sm center">
+    <thead class="thead-inverse">
+      <tr>
+        <th>Name</th>
+        <th>BirthDate</th>
+        <th>CellPhone Number</th>
+        <th>Email</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tr *ngFor="let student of students">
+      <td> {{student.name}} </td>
+      <td> {{student.birthdate}} </td>
+      <td> {{student.cellphonenumber}} </td>
+      <td> {{student.email}} </td>
+      <td><button type="button" class="btn btn-sm" (click)="deleteStudent(student.id)">Delete</button></td>
+    </tr>
+  </table>
+</div>
